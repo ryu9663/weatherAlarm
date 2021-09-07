@@ -1,3 +1,5 @@
+
+
 const weatherLine = document.createElement('h4')
 const temperatureLine = document.createElement('h4')
 const cityLine = document.createElement('h4')
@@ -24,7 +26,7 @@ function func(event){
     
     if(count === 0){ cityName = 'Jecheon'}
     else{cityName =  city.value}
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=479b71bd8170440dd418a65c5c00da87`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`
 
 fetch(url)
     .then(response => response.json())
@@ -39,7 +41,7 @@ fetch(url)
 }
 // const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=479b71bd8170440dd418a65c5c00da87`
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=Jecheon&appid=479b71bd8170440dd418a65c5c00da87`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=Jecheon&appid=${API_KEY}`)
     .then(response => response.json())
     .then(data => {
         
