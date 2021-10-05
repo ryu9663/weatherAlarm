@@ -39,7 +39,7 @@ fetch(url)
         
     })
 }
-// const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=479b71bd8170440dd418a65c5c00da87`
+
 
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=Jecheon&appid=${API_KEY}`)
     .then(response => response.json())
